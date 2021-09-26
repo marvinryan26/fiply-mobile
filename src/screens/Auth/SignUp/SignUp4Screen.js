@@ -1,13 +1,13 @@
 import React from "react";
 import { StyleSheet, Text, Image, ImageBackground, Button, TextInput, View, TouchableOpacity } from "react-native";
 
-const SignUp1 = () => {
+const SignUp4Screen = () => {
 
     return(
-        <ImageBackground source={require('../../../assets/wavesignup1.png')}
+        <ImageBackground source={require('../../../../assets/wavesignup1.png')}
         style={styles.imgBG}>
         <View style={styles.container}>
-            <Image source={require('../../../assets/Fiply-Logo.png')} 
+            <Image source={require('../../../../assets/Fiply-Logo.png')} 
             style={styles.logo}/>
             <Text style={{ flexDirection: "row", 
             color: "#3aaFaa",
@@ -15,18 +15,9 @@ const SignUp1 = () => {
             marginLeft: 10,}}>FIPLY</Text>
             </View>
             <View style={{flex:3, alignItems: "center"}}>
+                <Text style={{margin: 20, fontSize: 18,}}>Confirmation of Email/Phone Number</Text>
                 <TextInput placeholder="Most Recent Job"
-                style={styles.txtInp}/>
-                <TextInput placeholder="Employment Type"
-                style={styles.txtInp}/>
-                <TextInput placeholder="Most Recent Company"
-                style={styles.txtInp}/>
-                <TextInput placeholder="Industry"
-                style={styles.txtInp}/>
-                <TouchableOpacity style={{margin: 5,
-                alignItems: 'center',}}>
-                <Text style={styles.btnText}>      I'm a student      </Text>
-                </TouchableOpacity>     
+                style={styles.txtInp}/>     
                 <View style={styles.btnContainer}>
                 <Button title="Continue" 
                 color="#3aafaa"/>                     
@@ -72,14 +63,7 @@ const styles = StyleSheet.create({
         textAlign: "center",
         margin: 15,
     },
-    btnText:{
-        padding: 5,
-        borderWidth: 1,
-        borderColor: "#3aafaa",
-        color: "#3aafaa",
-        
-    },
 });
 
 
-export default SignUp1;
+export default SignUp4Screen;

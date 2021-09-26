@@ -2,13 +2,13 @@ import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
 import { StyleSheet, Text, Image, ImageBackground, Button, TextInput, View } from "react-native";
 
-const SignUp1 = ({navigation}) => {
+const SignUp1Screen = ({navigation}) => {
 
     return(
-        <ImageBackground source={require('../../../assets/wavesignup1.png')}
+        <ImageBackground source={require('../../../../assets/wavesignup1.png')}
         style={styles.imgBG}>
         <View style={styles.container}>
-            <Image source={require('../../../assets/Fiply-Logo.png')} 
+            <Image source={require('../../../../assets/Fiply-Logo.png')} 
             style={styles.logo}/>
             <Text style={{ flexDirection: "row", 
             color: "#3aaFaa",
@@ -77,4 +77,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default SignUp1;
+export default SignUp1Screen;
